@@ -10,6 +10,25 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include <iostream>
+#include <string>
+enum DataType { Bool, Int, Uint, Float, Double};
+
+struct Prong {
+	DataType d;
+	char size; //can be 1-4;
+};
+
+//REEEEEEEEEEEEEEEEE OO IS EVIL
+class Node {
+	Node * connections;
+	int * connectionIndex;
+	void * outputData;
+};
+
+void compileShader() {
+
+}
 
 int main()
 {
